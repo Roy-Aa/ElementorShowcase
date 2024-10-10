@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementor</title>
+    <script src="js/main.js" defer></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bungee+Shade&family=Pacifico&family=Ruthie&family=Updock&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6407209138.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <article class="baseleft">
+        <header class="baseleft-header"><h2 onclick="document.getElementById('inputfont').innerText='Jasper kon er om lachen :D'">Elementor</h2></header>
+        <section class="baseleft-section">
+            <h2>Kies een font <span class="pinkblackanimation">!</span></h2>
+            <figure class="baseleft-figure">
+                <button class="baseleft-button ba" onclick="document.getElementById('inputfont').style.fontFamily = 'Ruchie, cursive'" style="font-family: 'Ruchie', cursive;">Font</button>
+                <button class="baseleft-button bb" onclick="document.getElementById('inputfont').style.fontFamily = 'Bungee Shade, sans-serif'" style="font-family: 'Bungee Shade', sans-serif;">Font</button>
+                <button class="baseleft-button bc" onclick="document.getElementById('inputfont').style.fontFamily = 'Pacifico, cursive'" style="font-family: 'Pacifico', cursive;">Font</button>
+                <button class="baseleft-button bd" onclick="document.getElementById('inputfont').style.fontFamily = 'Updock, cursive'" style="font-family: 'Updock', cursive;">Font</button>
+                <button class="baseleft-button be" onclick="document.getElementById('inputfont').style.fontFamily = 'Archivo Black, sans-serif'" >Reset</button>
+            </figure>
+            <h2>Type iets hier <span class="pinkblackanimation">!</span></h2>
+            <textarea placeholder="Dit is een Elementor logo" maxlength="30" id="textareading"></textarea>
+        </section>
+        <footer class="baseleft-footer">Roy Aardenburg</footer>
+    </article>
+    <article class="baseright">
+        <p id="inputfont">Dit is een Elementor logo</p><i class="fa-brands fa-elementor"></i>
+    </article>
+
+    <script>
+        document.getElementById("textareading").addEventListener("input", function() {
+            document.getElementById("inputfont").innerText = this.value;
+        });
+    </script>
+
+</body>
+</html>
+
+
